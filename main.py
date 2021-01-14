@@ -14,7 +14,6 @@ window_size = 5  # how many frames for line smoothing
 left_line = Line(n=window_size)
 right_line = Line(n=window_size)
 detected = False  # did the fast line fit detect the lines?
-left_curve, right_curve = 0., 0.  # radius of curvature for left and right lanes
 left_lane_inds, right_lane_inds = None, None  # for calculating curvature
 
 
@@ -25,7 +24,7 @@ def annotate_image(img_in):
 	Returns annotated image
 	"""
 	global mtx, dist, left_line, right_line, detected
-	global left_curve, right_curve, left_lane_inds, right_lane_inds
+	global left_lane_inds, right_lane_inds
 
 	# threshold, perspective transform
 	img, abs_bin, mag_bin, dir_bin, hls_bin = combined_thresh(img_in)
