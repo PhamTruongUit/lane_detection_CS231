@@ -7,7 +7,6 @@
     - pickle
     - moviepy
     - tkinter
-    - imageio
 # Source
 - GUI
     - Read file
@@ -19,7 +18,7 @@
 - Line: create class Line
 - Line_fit: Find and fit lane lines
 
-<img src='Process.png' alt='Process' style='height:500px; width:675px'>
+<img src='Process.png' alt='Process' style='display: block; margin-left: auto; margin-right: auto; width:80%'>
 
 # Run
 `python GUI.py`
